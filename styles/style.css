@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  background-color: #f5efd0;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  height: 132px;
+  padding: 24px 20px;
+  gap: 168px;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__logo-image {
+  width: 78.453px;
+  height: 15.432px;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  list-style: none;
+}
+
+.header__menu-link {
+  color: var(--text-light, #f5f5f5);
+}
+
+.header__menu-link:hover {
+  text-decoration: none;
+}
+
+.content-section {
+  width: 360px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.content-section_theme_dark {
+  background: var(--black-bg, #131313);
+  color: var(--text-light, #f5f5f5);
+}
+
+.content-section_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+}
+
+.cover {
+  padding: 0 0 30px 0;
+}
+
+.cover__content {
+  margin-left: 20px;
+  height: 100%;
+  background-image: url("../images/cover.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.title {
+  width: 339px;
+  height: 221px;
+  font-family: "EB Garamond";
+  font-size: 72px;
+  font-style: normal;
+
+  .text-right {
+    margin-right: 24px;
+  }
+
+  .accent-span {
+    line-height: 72px;
+  }
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 37px;
+}
+
+.intro__heading {
+  display: flex;
+}
+
+.intro__date {
+  white-space: nowrap;
+}
+
+.reasons {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.content-section__subtitle {
+  font-family: "EB Garamond";
+  font-size: 28px;
+}
+
+.content-section__introduction {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.content-section__list {
+  margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-section__list-item {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.content-section__list-accent {
+  font-family: "Inter Bold";
+}
+
+.how-to {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card_theme_dark {
+  background: var(--gray-bg, #343434);
+}
+
+.card_theme_bright {
+  background: var(--yellow-bg, #fee42a);
+  color: var(--black-bg, #131313);
+}
+
+.card__author-photo {
+  height: 100px;
+  width: 100px;
+}
+
+.card__author-name {
+  font-family: "Inter Bold";
+  font-size: 16px;
+}
+
+.card__title {
+  font-family: "EB Garamond";
+  font-size: 22px;
+}
+
+.card__text {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.footer {
+  border-top: 1px solid var(--yellow-bg, #fee42a);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__links {
+  font-family: "Inter";
+  font-size: 14px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__menu-link {
+  color: var(--text-light, #f5f5f5);
+  text-decoration: none;
+}
