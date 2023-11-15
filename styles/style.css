@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #f5efd0;
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -21,10 +21,9 @@ blockquote {
 .header {
   display: flex;
   align-items: flex-start;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
-  height: 132px;
   padding: 24px 20px;
   gap: 168px;
 }
@@ -35,7 +34,6 @@ blockquote {
 
 .header__logo-image {
   width: 78.453px;
-  height: 15.432px;
 }
 
 .header__menu-list {
@@ -77,34 +75,31 @@ blockquote {
 
 .cover__content {
   margin-left: 20px;
-  height: 100%;
   background-image: url("../images/cover.svg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
 
 .title {
-  width: 339px;
-  height: 221px;
-  font-family: "EB Garamond";
+  width: 100%;
+  max-width: 339px;
+  font-family: "EB Garamond", serif;
   font-size: 72px;
   font-style: normal;
-
-  .text-right {
-    margin-right: 24px;
-  }
-
-  .accent-span {
-    line-height: 72px;
-  }
+  line-height: 72px;
 }
 
 .accent-span {
   display: block;
+  font-weight: 500;
 }
 
 .text-center {
   text-align: center;
+}
+
+.title__text-right {
+  margin-right: 24px;
 }
 
 .text-right {
@@ -116,14 +111,26 @@ blockquote {
   flex-direction: column;
   gap: 24px;
   padding-bottom: 37px;
+  line-height: 21.6px;
 }
 
 .intro__heading {
   display: flex;
 }
 
+.intro__heading-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .intro__date {
   white-space: nowrap;
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .reasons {
@@ -135,7 +142,7 @@ blockquote {
 }
 
 .content-section__subtitle {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-size: 28px;
 }
 
@@ -157,7 +164,8 @@ blockquote {
 }
 
 .content-section__list-accent {
-  font-family: "Inter Bold";
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 .how-to {
@@ -182,6 +190,18 @@ blockquote {
   gap: 8px;
 }
 
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .card_theme_dark {
   background: var(--gray-bg, #343434);
 }
@@ -197,17 +217,19 @@ blockquote {
 }
 
 .card__author-name {
-  font-family: "Inter Bold";
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
   font-size: 16px;
 }
 
 .card__title {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", serif;
   font-size: 22px;
+  font-weight: 500;
 }
 
 .card__text {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 21.6px;
 }
@@ -221,10 +243,11 @@ blockquote {
 }
 
 .footer__links {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   display: flex;
   gap: 16px;
+  list-style: none;
 }
 
 .footer__menu-link {
