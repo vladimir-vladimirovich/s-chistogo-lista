@@ -77,7 +77,7 @@ blockquote {
   margin-left: 20px;
   background-image: url("../images/cover.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 10px bottom;
 }
 
 .title {
@@ -116,6 +116,7 @@ blockquote {
 
 .intro__heading {
   display: flex;
+  color: var(--text-gray, #CCC);
 }
 
 .intro__heading-title {
